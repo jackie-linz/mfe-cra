@@ -33,7 +33,7 @@ module.exports = {
       name: "cra",
       filename: "remoteEntry.js",
       exposes: {
-        "./App": "./src/App",
+        "./CraPage": "./src/CraPage",
         "./Button": "./src/Button",
       },
       shared: {

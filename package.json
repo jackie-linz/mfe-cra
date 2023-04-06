@@ -12,9 +12,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "webpack serve --port 5003",
+    "build": "webpack build",
+    "serve": "serve dist -p 5003 -C",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +34,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.0",
+    "serve": "^14.2.0",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2"
   }
 }
